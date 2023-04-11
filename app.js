@@ -22,7 +22,7 @@ function sendNotification(){
         tokens : token,
         // topic : topic,
         notification : {
-            title : payload.title,//
+            notificationID : payload.title,//
             body : payload.body,
             image : payload.image,
         },
@@ -40,15 +40,19 @@ function sendNotification(){
 function sendNotificationToTopic()
 {
    const message = {
+
     notification: {
         title : payload.title,
         body : payload.body,
         image : payload.image,
     },
     data: {
-        type : 'test',
-        content : 'test#2',
-        sender : 'Guitar#3',
+        "notificationID": "6918762498214",
+        "sender": "Test2",
+        "headerIMG": "http://dummyimage.com/1920x1080.png/cc0000/ffffff",
+        "title": "Function-based background approach",
+        "description": "dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue eget semper rutrum nulla nunc purus",
+        "createDate": "2029-04-07T10:27:45Z"
     },
     topic : topic,
    };
