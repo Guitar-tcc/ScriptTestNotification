@@ -15,7 +15,6 @@ app.get("/", (req, res) => res.send("Hello World!"));
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 app.post("/sender", (req, res) => {
-    res.send("send message");
     const message = req.body;
     admin.messaging().send(message).then((response) => {
         // Response is a message ID string.
