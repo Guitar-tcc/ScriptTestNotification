@@ -1,11 +1,11 @@
 {
   "dependencies": {
+    "express": "^4.18.2",
     "firebase-admin": "^11.6.0"
   },
   "name": "scriptnotication",
   "version": "1.0.0",
   "main": "app.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
