@@ -19,8 +19,10 @@ app.post("/sender", (req, res) => {
     const message = req.body;
     admin.messaging().send(message).then((response) => {
         // Response is a message ID string.
+        res.send("send message done ");    
         console.log('Successfully sent message:', response);
-      }, (error) => {     
+      }, (error) => { 
+        res.send("send message faile ");    
         console.log('Error sending message:', error);
       });
 });
